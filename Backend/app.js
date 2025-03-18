@@ -15,7 +15,7 @@ app.use(cors());
 // MongoDB Connection
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://lavishsharma182005:TmlPplyh3q6rmyyl@onlinecodeide.8qcsr.mongodb.net/?retryWrites=true&w=majority&appName=OnlineCodeIde');
+        await mongoose.connect('MongoDb_key');
         console.log('✅ MongoDB Connected Successfully');
     } catch (error) {
         console.error('❌ MongoDB Connection Error:', error);
