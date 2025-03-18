@@ -1,0 +1,117 @@
+/* Container for the list card */
+.listcard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.listcard:hover {
+    background: #e9ecef;
+}
+
+/* Left side with image and text */
+.listcard-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listcard-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Text content */
+.listcard-para h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.listcard-para p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Delete button */
+.listcard-delete img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.listcard-delete img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Modal styling */
+.model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainModel {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainModel h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Buttons */
+.model-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.model-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.model-buttons button:first-child {
+    background: #dc3545;
+    color: white;
+}
+
+.model-buttons button:first-child:hover {
+    background: #c82333;
+}
+
+.model-buttons button:last-child {
+    background: #6c757d;
+    color: white;
+}
+
+.model-buttons button:last-child:hover {
+    background: #5a6268;
+}

@@ -1,0 +1,84 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Navbar background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Required for dropdown positioning */
+}
+
+/* Logo styling */
+.navbar-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navbar links container */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between links */
+}
+
+/* Link styling */
+.navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333; /* Dark text color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-links a:hover {
+    color: #3498db; /* Light blue hover effect */
+}
+
+/* Avatar styling */
+.navbar-links .avatar {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Dropdown menu styling */
+.Navbar-dropdown {
+    position: absolute; /* Position relative to the navbar */
+    top: 70px; /* Position below the navbar */
+    right: 20px; /* Align to the right side of the navbar */
+    background-color: #ffffff; /* Dropdown background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    width: 200px; /* Fixed width for dropdown menu */
+}
+
+/* Dropdown is hidden by default */
+.Navbar-dropdown.hidden {
+    display: none; /* Hide dropdown when "hidden" class is present */
+}
+
+/* Dropdown header styling */
+.Navbar-dropdown h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.Navbar-dropdown hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light gray divider line */
+}
+
+/* Dropdown items styling */
+.Navbar-dropdown i {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    font-size: 14px;
+    color: #333333; /* Text color inside dropdown */
+}
+
+.Navbar-dropdown i:hover {
+    color: #3498db; /* Light blue hover effect for items */
+}

@@ -1,0 +1,65 @@
+/* EditorNavbar container */
+.editornavbar {
+    display: flex;
+    justify-content: space-between; /* Space out content: left, center, and right */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add spacing inside the navbar */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color for contrast */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    /* Make it stick to the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Logo styling */
+.editornavbar-logo img {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+}
+
+
+
+/* Centered paragraph styling */
+.editornavbar p {
+    font-size: 16px; /* Adjust font size */
+    font-weight: 500; /* Slightly bold text */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+/* Icon styling on the right */
+.editornavbar i {
+    font-size: 50px; /* Adjust icon size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth hover effect */
+}
+
+.editornavbar i:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #3498db; /* Light blue hover effect for icon */
+}
+
+
+
+
+.light-mode {
+    background-color: #f9f9f9; /* Light background */
+    color: #333333; /* Dark text color */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text color */
+}
+
+.dark-navbar {
+    background-color: #1a1a1a; /* Darker shade for navbar */
+    border-bottom: 1px solid #333333; /* Subtle border below navbar */
+}
+
+/* Editor Navbar (light mode) */
+.light-navbar {
+    background-color: #ffffff; /* White background for navbar */
+    border-bottom: 1px solid #dddddd; /* Light gray border below navbar */
+}

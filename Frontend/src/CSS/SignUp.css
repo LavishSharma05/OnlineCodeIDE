@@ -1,0 +1,114 @@
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.signup-left {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 40%;
+}
+
+.signup-left h1{
+    font-size: 3rem; /* Large font size for emphasis */
+    font-weight: 700; /* Bold text */
+    color: #343434; /* Neutral dark color */
+    text-align: left; /* Center-align the text */
+    margin: 20px 0; /* Add spacing around the heading */
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+}
+
+.signup-left img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.signup-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputBox input:focus {
+    border-color: #3498db; /* Light blue border on focus */
+    box-shadow: inset 0px 0px 2px rgba(52, 152, 219, 0.5);
+}
+
+.signup-btn {
+    background-color: #3498db; /* Light blue button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Paragraph styling in the left div */
+.signup-left p {
+    margin-top: 20px; /* Add spacing above the paragraph */
+    font-size: 14px; /* Slightly smaller text */
+    color: #555555; /* Gray text color for better readability */
+}
+
+.signup-left p a {
+    color: #3498db; /* Light blue link color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.signup-left p a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Right section styling with a larger logo/image */
+.signup-right {
+    width: 55%;
+}
+
+.signup-right img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .signup {
+        flex-direction: column-reverse; /* Stack the form below the image */
+        align-items: center;
+        padding: 10px;
+        height: auto; /* Adjust height for smaller screens */
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .signup-left,
+    .signup-right {
+        width: 90%; /* Take most of the screen width on small devices */
+        margin-bottom: 20px; /* Add spacing between sections */
+        text-align: center; /* Center-align content for smaller screens */
+      }
+}

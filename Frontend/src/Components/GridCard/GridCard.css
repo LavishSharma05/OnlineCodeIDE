@@ -1,0 +1,65 @@
+/* Container for the GridCard */
+.gridcard {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    background-color: #ffffff; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 15px; /* Spacing inside the card */
+    width: 200px; /* Fixed width to make it look like a small window */
+    height: 250px; /* Fixed height for compact design */
+    margin: 10px; /* Space between cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for GridCard */
+.gridcard:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+/* Project logo/image styling */
+.gridcard img {
+    width: 60px; /* Fixed size for project logo */
+    height: 60px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits well */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Title styling */
+.gridcard h3 {
+    font-size: 16px; /* Title size (slightly smaller for compact design) */
+    font-weight: bold;
+    color: #333333; /* Dark text color for visibility */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+/* Paragraph and delete icon container styling */
+.gridcard-para {
+    display: flex;
+    justify-content: space-between; /* Space out paragraph and delete icon horizontally */
+    align-items: center; /* Center-align items vertically */
+    width: 100%; /* Take full width of the card */
+}
+
+/* Paragraph styling inside gridcard-para */
+.gridcard-para p {
+    font-size: 12px; /* Smaller font size for compact design */
+    color: #666666; /* Subtle gray color for secondary text */
+}
+
+/* Delete icon styling inside gridcard-para */
+.gridcard-para img {
+    width: 20px; /* Smaller size for delete icon to match compact design */
+    height: auto;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for delete icon */
+.gridcard-para img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+

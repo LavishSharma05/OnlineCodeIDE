@@ -1,0 +1,109 @@
+/* Parent container for the editor */
+.editor {
+    display: flex; /* Flexbox layout */
+    width: 100%; /* Full width of the viewport */
+    height: calc(100vh - 50px); /* Full height minus EditorNavbar height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Left section (code editor area) */
+.left {
+    width: 50%; /* Take up half the width */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for contrast */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    height: 100%;
+}
+
+.widthfull {
+    width: 100vw; /* Full width */
+  }
+  
+  .widthhalf {
+    width: 50vw; /* Half width */
+  }
+
+/* Editor Navbar inside the left section */
+.editor-navbar {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between tabs and icons */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add spacing inside the navbar */
+    background-color: #1a1a1a; /* Darker shade for navbar */
+    border-bottom: 1px solid #333333; /* Subtle border below navbar */
+}
+
+/* Tabs inside the editor-navbar */
+.editor-navbar > div:first-child {
+    display: flex;
+    gap: 15px; /* Space between tabs (HTML, CSS, JS) */
+}
+
+.editor-navbar > div:first-child div {
+    font-size: 14px;
+    color: #ffffff; /* White text for visibility */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.editor-navbar > div:first-child div:hover {
+    color: #3498db; /* Light blue hover effect */
+}
+
+/* Icons inside the editor-navbar */
+.editor-icon i {
+    font-size: 18px;
+    color: #3498db; /* White icons for visibility */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth hover effect */
+}
+
+.editor-icon i:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: #818181; /* Light blue hover effect for icons */
+}
+
+/* Monaco Editor styling (inside left section) */
+.left .monaco-editor {
+    flex-grow: 1; /* Allow editor to fill remaining space in left section */
+    width:82%;
+}
+
+/* Right section (output area) */
+#output {
+    width: 50%; /* Take up half the width */
+    height: 100%; /* Full height minus EditorNavbar height */
+    background-color: #ffffff; /* White background for output area */
+    border: none; /* Remove iframe border */
+}
+
+.light-mode {
+    background-color: #f9f9f9; /* Light background */
+    color: #333333; /* Dark text color */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text color */
+}
+
+.dark-navbar {
+    background-color: #1a1a1a; /* Darker shade for navbar */
+    border-bottom: 1px solid #333333; /* Subtle border below navbar */
+}
+
+/* Editor Navbar (light mode) */
+.light-navbar {
+    background-color: #ffffff; /* White background for navbar */
+    border-bottom: 1px solid #dddddd; /* Light gray border below navbar */
+}
+
+.light-navbar > div:first-child div{
+    color: #000000;
+}
+
+.hidden {
+  display: none;
+}
